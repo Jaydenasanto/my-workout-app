@@ -1,0 +1,846 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sanseriffic", serif;
+}
+
+.homepage-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-container {
+  width: 65%;
+  padding: 1% 0%;
+  margin: 2% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 35px;
+  border: 0.1em solid #5ce7ff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header-container h1 {
+  letter-spacing: 0.5em;
+  font-size: 2vw;
+}
+
+.weekly-board-container {
+  min-height: 50%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 35px;
+  border: 0.1em solid #5ce7ff;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 10px 10px 10px -5px inset, rgba(0, 0, 0, 0.1) 10px 18px 10px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 10px 10px 10px -5px inset, rgba(0, 0, 0, 0.1) 10px 18px 10px -18px inset;
+  background-color: #f5f5f5;
+}
+
+.weekly-board-container .weekly-grid-layout {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3%;
+}
+
+.weekly-board-container .weekly-grid-layout .col {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekly-board-container .weekly-grid-layout .col .header-box {
+  width: 80%;
+  height: 13%;
+  border-radius: 12px;
+  background-color: rgba(211, 211, 211, 0.3);
+  border: 0.05em solid #acabab;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 17%;
+}
+
+.weekly-board-container .weekly-grid-layout .col .header-box h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1vw;
+  letter-spacing: 0.4em;
+  font-weight: 100;
+  text-align: center;
+  max-width: 100%;
+  padding-left: 5%;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder {
+  height: 80%;
+  width: 100%;
+  border-right: 0.1em solid rgba(177, 177, 177, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .program-title {
+  font-size: medium;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .exercise-tab {
+  height: 17%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  contain: strict;
+  margin-bottom: 2%;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .exercise-tab .exercise-tab-inputs {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .exercise-tab .exercise-tab-inputs .exercise-title {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  border: none;
+  font-size: x-small;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .exercise-tab .exercise-tab-inputs .sets-tab {
+  height: 80%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  contain: strict;
+  font-size: xx-small;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1%;
+  margin-right: 4%;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .exercise-tab .exercise-tab-inputs .sets-tab input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: xx-small;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .exercise-tab .exercise-tab-inputs .reps-tab {
+  height: 80%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  contain: strict;
+  font-size: xx-small;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1%;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .exercise-tab .exercise-tab-inputs .reps-tab input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: xx-small;
+}
+
+.weekly-board-container .weekly-grid-layout .col .mini-card-holder .duration-tab {
+  font-size: 0.5em;
+}
+
+.weekly-board-container .weekly-grid-layout .col .no-border {
+  border: none;
+}
+
+.plan-it-container {
+  width: 95%;
+}
+
+.plan-it-container h1 {
+  width: 100%;
+  padding: 2% 3% 1% 3%;
+  font-size: 1.9vw;
+  letter-spacing: 0.4em;
+  font-weight: 100;
+  -webkit-text-decoration: underline 0.05em #5ce7ff;
+          text-decoration: underline 0.05em #5ce7ff;
+}
+
+.plan-it-container .plan-it-grid {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: unset;
+      -ms-flex-positive: unset;
+          flex-grow: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2%;
+}
+
+.plan-it-container .plan-it-grid .exercise-tab {
+  height: 12%;
+  width: 95%;
+}
+
+.plan-it-container .plan-it-grid .exercise-tab .exercise-tab-inputs {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan-it-container .plan-it-grid .exercise-tab .exercise-tab-inputs .sets-tab {
+  height: 75%;
+}
+
+.plan-it-container .plan-it-grid .add-program-icon {
+  cursor: pointer;
+}
+
+.plan-it-container .plan-it-grid .add-program-icon:hover svg {
+  height: 14%;
+  width: 13%;
+}
+
+.plan-it-container .plan-it-grid .add-program-icon:hover:active svg {
+  height: 12%;
+  width: 11%;
+}
+
+.mini-card-container {
+  height: 80%;
+  min-height: 150px;
+  width: 85%;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  border: 0.05em solid #5ce7ff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  padding: 6% 2%;
+  margin: 15% 0%;
+}
+
+.mini-card-container .program-title {
+  height: 17%;
+  width: 95%;
+  background-color: rgba(211, 211, 211, 0.3);
+  border: 0.05em solid #d3d3d3;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: x-large;
+  letter-spacing: 0.3em;
+  margin-bottom: 5%;
+}
+
+.mini-card-container input {
+  text-align: center;
+}
+
+.mini-card-container .exercise-tabs {
+  height: 70%;
+  width: 100%;
+  overflow: scroll;
+  margin-bottom: 4%;
+  position: relative;
+  left: 2%;
+}
+
+.mini-card-container .exercise-tabs .exercise-note {
+  display: none;
+}
+
+.mini-card-container .duration-tab {
+  height: 8%;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  font-size: x-small;
+}
+
+.exercise-tab {
+  height: 40%;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  contain: strict;
+  margin-bottom: 2%;
+}
+
+.exercise-tab .exercise-tab-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 55%;
+  width: 100%;
+}
+
+.exercise-tab .exercise-tab-inputs .exercise-title {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  border: none;
+  margin-left: 1%;
+}
+
+.exercise-tab .exercise-tab-inputs .sets-tab {
+  height: 80%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  contain: strict;
+  font-size: small;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1%;
+  margin-right: 3%;
+  margin-left: 2%;
+}
+
+.exercise-tab .exercise-tab-inputs .sets-tab input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.exercise-tab .exercise-tab-inputs .reps-tab {
+  height: 80%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  contain: strict;
+  font-size: small;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1%;
+}
+
+.exercise-tab .exercise-tab-inputs .reps-tab input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.exercise-tab .exercise-tab-inputs .drop-down-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0% 1.5%;
+}
+
+.exercise-tab .exercise-tab-inputs .drop-down-arrow svg {
+  height: 70%;
+  width: 70%;
+  cursor: pointer;
+}
+
+.exercise-tab .exercise-note {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2%;
+}
+
+.exercise-tab .exercise-note input {
+  width: 97%;
+  height: 99%;
+  border-radius: 15px;
+  border: 0.5px solid #acabab;
+  text-align: start;
+  padding-left: 1%;
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+.exercise-tab .exercise-note .delete-exercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 1% 2% 1% 0%;
+}
+
+.exercise-tab .exercise-note .delete-exercise svg {
+  cursor: pointer;
+}
+
+.card-container {
+  position: absolute;
+  left: 34%;
+  top: 25%;
+  height: 68%;
+  min-height: 150px;
+  width: 30%;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  border: 0.05em solid #5ce7ff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  padding: 1% 0.5%;
+}
+
+.card-container .program-title {
+  height: 17%;
+  width: 95%;
+  background-color: rgba(211, 211, 211, 0.3);
+  border: 0.05em solid #d3d3d3;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: xx-large;
+  letter-spacing: 0.3em;
+  margin-bottom: 3%;
+}
+
+.card-container input {
+  text-align: center;
+}
+
+.card-container .week-day-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 7fr;
+      grid-template-columns: 7fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5%;
+  width: 94%;
+  margin-bottom: 2%;
+}
+
+.card-container .week-day-tabs .day-tab {
+  height: 80%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgba(211, 211, 211, 0.8);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.65) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.65) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  contain: strict;
+  font-size: small;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0% 1%;
+  cursor: pointer;
+}
+
+.card-container .week-day-tabs .day-tab:hover {
+  position: relative;
+  top: -3.5%;
+  -webkit-box-shadow: black 0px 3px 8px;
+          box-shadow: black 0px 3px 8px;
+}
+
+.card-container .week-day-tabs .day-tab:active {
+  position: relative;
+  top: 3.5%;
+}
+
+.card-container .exercise-tabs {
+  height: 70%;
+  width: 100%;
+  margin-bottom: 1.5%;
+  overflow: scroll;
+  margin-left: 4.5%;
+}
+
+.card-container .exercise-tab {
+  height: 10%;
+}
+
+.card-container .add-exercise {
+  height: 7%;
+  width: 95%;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 8px;
+  border: 0.5px solid #acabab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4%;
+}
+
+.card-container .add-exercise:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+  position: relative;
+  top: -0.5%;
+}
+
+.card-container .add-exercise:active {
+  position: relative;
+  top: 0.1%;
+}
+
+.card-container .confirm-btn {
+  height: 9%;
+  width: 35%;
+  margin-bottom: 3%;
+  background-color: rgba(92, 231, 255, 0.3);
+  border-radius: 10px;
+  font-size: large;
+  letter-spacing: 0.25em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+}
+
+.card-container .confirm-btn:hover {
+  background-color: rgba(92, 231, 255, 0.5);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+  position: relative;
+  top: -0.5%;
+}
+
+.card-container .confirm-btn:active {
+  position: relative;
+  top: 0.1%;
+}
+
+.card-container .duration-tab {
+  height: 7%;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0.05em solid #acabab;
+  font-size: x-small;
+}
+
+.card-container .exercise-note {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2%;
+}
+
+.card-container .exercise-note input {
+  width: 97%;
+  height: 99%;
+  border-radius: 15px;
+  border: 0.5px solid #acabab;
+  text-align: start;
+  padding-left: 1%;
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+.card-container .exercise-note .delete-exercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 1% 2% 1% 0%;
+}
+
+.card-container .exercise-note .delete-exercise svg {
+  cursor: pointer;
+}
+
+.card-container .open-notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-container .tab-resize {
+  height: 40%;
+}
+/*# sourceMappingURL=main.css.map */
